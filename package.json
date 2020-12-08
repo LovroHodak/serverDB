@@ -1,0 +1,24 @@
+{
+  "name": "serverdb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LovroHodak/serverDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LovroHodak/serverDB/issues"
+  },
+  "homepage": "https://github.com/LovroHodak/serverDB#readme",
+  "dependencies": {
+    "mongoose": "^5.11.5"
+  }
+}

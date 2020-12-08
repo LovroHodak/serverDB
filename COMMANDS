@@ -1,3 +1,26 @@
+IN THIS PROJECT
+1) CONNECT TO GITHUB
+git init
+git add .
+git commit -m "proj create server and connect to mongo"
+git branch -M main
+git remote add origin https://github.com/LovroHodak/serverDB.git
+git push -u origin main
+
+npm init
+
+ADD MANUALLY TO PACKAGE.json in SCRIPTS
+"start": "node index.js",
+"dev": "nodemon index.js"
+
+npm i
+npm i mongoose
+
+
+
+
+
+
 ADD MANUALLY TO PACKAGE.json in SCRIPTS
 "start": "node index.js",
 "dev": "nodemon index.js"
@@ -9,7 +32,8 @@ nodemon index.js
 
 2) CONNECT TO GITHUB
 git init
-git add git commit -m "myBack first push"
+git add 
+git commit -m "myBack first push"
 git branch -M main
 git remote add origin https://github.com/LovroHodak/myBack.git
 git push -u origin main
