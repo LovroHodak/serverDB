@@ -3,12 +3,14 @@ require('./config/db.config')
 
 let Friend = require('./models/friend.model')
 
-Friend.create({
+let CreateFriend = Friend.create({
     name: 'Blaz',
     age: 31,
     country: 'Spain',
     title: 'sir'                  // this doesnt get added because 'title' doesnt exists
-}).then(() => {
+})
+
+CreateFriend.then(() => {
     console.log('Data added!')
 }).catch((err) => {
     console.log('Error: ', err)
@@ -20,18 +22,18 @@ Friend.insertMany([{name: 'Fejzo', age: 32, country: 'Slovenia'}, {name: 'Pamz',
     console.log('my err: ',err)
 })
 
-Friend.updateOne({name: 'Blaz'}, { $set: {age:49} } )
-.then((response) => {
+let UpdateFriend = Friend.updateOne({name: 'Fejzo'}, { $set: {age:40} } )
+
+UpdateFriend.then((response) => {
     console.log('my res: ', response)
 }).catch((err) => {
     console.log('my err: ',err)
 })
 
 
-Friend.findByIdAndUpdate('5fcfb2e704525c2f24bad47a', { $set: { name:'Habo' } } )
+Friend.findByIdAndUpdate('5fcfb2e704525c2f24bad47a', { $set: { name:'Habi' } } )
 .then((response) => {
     console.log('old data is: ', response)
 }).catch((err) => {
     console.log('my err: ',err)
 })
-

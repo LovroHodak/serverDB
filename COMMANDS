@@ -21,7 +21,7 @@ npm i mongoose
 
 
 
-ADD MANUALLY TO PACKAGE.json in SCRIPTS
+0) ADD MANUALLY TO PACKAGE.json in SCRIPTS
 "start": "node index.js",
 "dev": "nodemon index.js"
 
